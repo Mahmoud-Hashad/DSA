@@ -1,8 +1,9 @@
 #include "dstack.h"
 
-dstack::dstack(): arr(new int[start]), growth_factory(2), top_pos(-1), stack_size(start) {}
-dstack::~dstack() {}
-
+dstack::dstack(): arr(new int[10]), top_pos(-1), stack_size(10), growth_factory(2) {}
+dstack::~dstack() {
+  delete [] arr;
+}
 
 /*
   is full
@@ -11,6 +12,7 @@ dstack::~dstack() {}
 bool dstack::full() {
   return top_pos >= stack_size - 1;
 }
+
 /*
   empty
   check if stack is empty (has no items)
@@ -18,6 +20,7 @@ bool dstack::full() {
 bool dstack::empty(void) {
   return top_pos == -1;
 }
+
 /*
   size
   number of element at the stack
@@ -72,13 +75,15 @@ void dstack::pop(void) {
   top_pos--;
 }
 
-
-
-
-
-
-
-
-
-
+/*
+  swap
+  swap two stack
+*/
+void dstack::swap(dstack *para) {
+  dstack *temp = para;
+  para = this;
+  this->arr = temp->arr;
+  this->top_pos = temp->top_pos;
+  this->stack_size = temp->stack_size;
+}
 

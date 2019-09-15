@@ -3,8 +3,6 @@
 
 #include <iostream>
 
-#define start 10
-
 class dstack
 {
   private:
@@ -25,7 +23,7 @@ class dstack
     void push(int number);
     int top();
     void pop();
-
+    void swap(dstack *para);
 };
 
 #endif // DSTACK_H
