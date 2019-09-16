@@ -1,10 +1,9 @@
 # depslib dependency file v1.0
-1568578780 source:c:\users\easy\desktop\dsa\ll-queue\main.cpp
+1568628440 source:c:\users\easy\desktop\dsa\ll-queue\main.cpp
 	<iostream>
 	"queue.h"
 
-1568578404 c:\users\easy\desktop\dsa\ll-queue\include\queue.h
+1568628043 c:\users\easy\desktop\dsa\ll-queue\include\queue.h
 
-1568578766 source:c:\users\easy\desktop\dsa\ll-queue\src\queue.cpp
-	"queue.h"
+1568628027 source:c:\users\easy\desktop\dsa\ll-queue\src\queue.cpp
 

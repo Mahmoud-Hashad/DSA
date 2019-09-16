@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1568552758 source:c:\users\easy\desktop\dsa\dstack\main.cpp
+1568590862 source:c:\users\easy\desktop\dsa\dstack\main.cpp
+	<iostream>
+	"dstack.h"
+	<stack>
+
+1568626937 c:\users\easy\desktop\dsa\dstack\include\dstack.h
 	<iostream>
 	"dstack.h"
 
-1568553101 c:\users\easy\desktop\dsa\dstack\include\dstack.h
-	<iostream>
-
-1568553092 source:c:\users\easy\desktop\dsa\dstack\src\dstack.cpp
-	"dstack.h"
+1568626929 source:c:\users\easy\desktop\dsa\dstack\src\dstack.cpp
 
