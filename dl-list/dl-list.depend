@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1568756813 source:c:\users\easy\desktop\dsa\dl-list\main.cpp
+1568758521 source:c:\users\easy\desktop\dsa\dl-list\main.cpp
 	<iostream>
 	"dlist.h"
 
 1568655010 source:c:\users\easy\desktop\dsa\dl-list\src\dlist.cpp
 
-1568756830 c:\users\easy\desktop\dsa\dl-list\include\dlist.h
+1568758903 c:\users\easy\desktop\dsa\dl-list\include\dlist.h
 	<iostream>
 

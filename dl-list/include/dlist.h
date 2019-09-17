@@ -35,6 +35,7 @@ class dlist
     // modify methods
     void update(int index, T value);
     void reverse();
+    void sort();
     // delete methods
     void popFront();
     void popBack();
@@ -206,6 +207,33 @@ void dlist<T>::reverse() {
 
     // change node with the next one
     temp = temp->next;
+  }
+}
+
+// sort
+template <typename T>
+void dlist<T>::sort() {
+  // check validation conditions
+  if(total_size <= 1) return;
+
+  // temp pointer to the current element
+  node *temp = head;
+
+  // loop over the list
+  for(int i = 0; i < total_size - 1; i++) {
+    // loop to compare the current value with each element
+    while(temp->next) {
+      // if the current element larger than the next one
+      if(temp->value > temp->next->value) {
+        // swap the two node
+        T t = temp->value;
+        temp->value = temp->next->value;
+        temp->next->value = t;
+      }
+      temp = temp->next;
+    }
+
+    temp = head;
   }
 }
 
