@@ -16,6 +16,7 @@ class stack
     T& top() const;
     void push(T value);
     void pop();
+    void swap(stack<T>);
   private:
     array<T>* data;
 };
