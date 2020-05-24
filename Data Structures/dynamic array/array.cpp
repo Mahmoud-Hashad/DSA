@@ -83,6 +83,12 @@ T& array<T>::operator[] (unsigned int index) {
   return arr[index];
 }
 
+// return reference to the element at specific index
+template<class T>
+T& array<T>::at (unsigned int index) {
+  return this->operator[](index);
+}
+
 // return reference to the first element
 template<class T>
 T& array<T>::front() {

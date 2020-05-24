@@ -17,6 +17,7 @@ class array
     void shrink_to_fit();
     bool empty() const;
     T& operator[] (unsigned int);
+    T& at (unsigned int);
     T& front();
     T& back();
     void assign(const unsigned int, const T);
